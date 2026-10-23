@@ -3,9 +3,9 @@
   "version": "0.2.0",
   "description": "Unofficial MCP server for Meta Quest Developer Hub: orgs, apps, release channels, build uploads",
   "scripts": {
-    "start": "node src/server.js",
-    "test": "node --test test/offline.test.js",
-    "test:live": "node --test test/live.test.js"
+    "start": "node Source/server.js",
+    "test": "node --test Tests/offline.test.js",
+    "test:live": "node --test Tests/live.test.js"
   },
   "keywords": [
     "mcp",
@@ -18,7 +18,7 @@
   "license": "MIT",
   "type": "module",
   "bin": {
-    "mqdh-mcp": "src/server.js"
+    "mqdh-mcp": "Source/server.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.17.4",
@@ -28,7 +28,7 @@
     "node": ">=20"
   },
   "files": [
-    "src",
+    "Source",
     "README.md",
     "LICENSE"
   ],

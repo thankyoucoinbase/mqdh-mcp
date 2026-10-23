@@ -57,7 +57,7 @@ npm install
 **Claude Code**
 
 ```bash
-claude mcp add mqdh -- node /absolute/path/to/mqdh-mcp/src/server.js
+claude mcp add mqdh -- node /absolute/path/to/mqdh-mcp/Source/server.js
 ```
 
 **Claude Desktop / other MCP clients**
@@ -65,7 +65,7 @@ claude mcp add mqdh -- node /absolute/path/to/mqdh-mcp/src/server.js
 ```json
 {
   "mcpServers": {
-    "mqdh": { "command": "node", "args": ["/absolute/path/to/mqdh-mcp/src/server.js"] }
+    "mqdh": { "command": "node", "args": ["/absolute/path/to/mqdh-mcp/Source/server.js"] }
   }
 }
 ```
@@ -106,7 +106,7 @@ Tested on Windows. macOS paths follow MQDH's layout but are untested.
 
 | Operation | Mechanism |
 |---|---|
-| Orgs, apps, channels, test users, copy build | `POST https://graph.oculus.com/graphql` with form fields `access_token`, `doc_id`, `operation_name`, `variables` (persisted operations from MQDH 6.5.2, listed in [`src/graph.js`](src/graph.js)) |
+| Orgs, apps, channels, test users, copy build | `POST https://graph.oculus.com/graphql` with form fields `access_token`, `doc_id`, `operation_name`, `variables` (persisted operations from MQDH 6.5.2, listed in [`Source/graph.js`](Source/graph.js)) |
 | Upload | `ovr-platform-util upload-quest-build --app_id … --token … --channel … --apk … [--obb] [--notes] --disable-progress-bar [--draft]` (PC apps: `upload-rift-build --build-dir`). LIVE is passed as `store`. |
 
 ## Development

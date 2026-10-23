@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
 
-const SERVER = fileURLToPath(new URL("../src/server.js", import.meta.url));
+const SERVER = fileURLToPath(new URL("../Source/server.js", import.meta.url));
 
 export async function connect() {
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "mqdh-mcp-test-"));

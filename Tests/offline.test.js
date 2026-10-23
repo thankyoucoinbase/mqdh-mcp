@@ -1,7 +1,7 @@
 // Offline tests: no Meta login or network needed.
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { buildUploadArgs } from "../src/upload.js";
+import { buildUploadArgs } from "../Source/upload.js";
 import { connect } from "./helpers.js";
 
 const base = { appId: "123456789", platform: "ANDROID_6DOF", apk: "game.apk", token: "<token>" };
