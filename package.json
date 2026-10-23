@@ -1,0 +1,43 @@
+{
+  "name": "mqdh-mcp",
+  "version": "0.2.0",
+  "description": "Unofficial MCP server for Meta Quest Developer Hub: orgs, apps, release channels, build uploads",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/offline.test.js",
+    "test:live": "node --test test/live.test.js"
+  },
+  "keywords": [
+    "mcp",
+    "meta-quest",
+    "oculus",
+    "vr",
+    "model-context-protocol",
+    "claude"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "mqdh-mcp": "src/server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.4",
+    "zod": "^3.25.76"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thankyoucoinbase/mqdh-mcp.git"
+  },
+  "homepage": "https://github.com/thankyoucoinbase/mqdh-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/thankyoucoinbase/mqdh-mcp/issues"
+  }
+}
